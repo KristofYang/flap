@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>web02</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+13       <!-- 声明Servlet对象 -->
+14       <servlet-name>TestServlet</servlet-name>
+15       <!-- 上面一句指定Servlet对象的名称 -->
+16       <servlet-class>TestServlet</servlet-class>
+17       <!-- 上面一句指定Servlet对象的完整位置，包含包名和类名 -->
+18   </servlet>
+19   <servlet-mapping>
+20       <!-- 映射Servlet -->
+21       <servlet-name>TestServlet</servlet-name>
+22       <!--<servlet-name>与上面<Servlet>标签的<servlet-name>元素相对应，不可以随便起名  -->
+23       <url-pattern>/query</url-pattern>
+24       <!-- 上面一句话用于映射访问URL -->
+25   </servlet-mapping>
+</web-app>
